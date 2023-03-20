@@ -1,0 +1,24 @@
+
+body {
+}
+
+.txt {
+	height: 2000px;
+}
+
+// background-sizeは見切れないよう調整する
+.parallax01,.parallax02 {
+	height: 300px;
+	background: no-repeat #eee center / auto 150%;
+	@media (min-width: 768px) {
+		height: 500px;
+		background-size: 120% auto;
+	}
+}
+
+.parallax01 {
+	background-image: url(../images/bg01.jpg);
+}
+.parallax02 {
+	background-image: url(../images/bg02.jpg);
+}
