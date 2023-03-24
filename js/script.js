@@ -14,5 +14,5 @@ const parallax = () => {
 	})
 }
 
-window.addEventListener('scroll', parallax, {passive: true});
+window.addEventListener('scroll', parallax);
 parallax();
