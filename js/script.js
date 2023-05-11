@@ -1,18 +1,26 @@
-/**
- * background parallax
- */
-const targets = document.querySelectorAll('.js-parallax');
+
+
 const parallax = () => {
-	let scroll = window.scrollY;
-	let windowHeight = window.innerHeight;
-	let offset;
-	targets.forEach((target) => {
-		offset = target.offsetTop;
-		if (scroll > offset - windowHeight) {
-			target.style.backgroundPositionY = (scroll - offset) * .2 + 'px';
-		}
-	})
+	const targets = document.querySelectorAll('.js-parallax');
+	if (!targets.length) {
+		return;
+	}
+
+	const scroll = () => {
+		let scroll = window.scrollY;
+		let windowHeight = window.innerHeight;
+		let offset;
+		targets.forEach((target) => {
+			offset = target.offsetTop;
+			if (scroll > offset - windowHeight) {
+				target.style.backgroundPositionY = (scroll - offset) * .3 + 'px';
+			}
+		})
+	}
+
+	window.addEventListener('scroll', scroll);
+	scroll();
+
 }
 
-window.addEventListener('scroll', parallax);
 parallax();

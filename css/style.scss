@@ -1,11 +1,4 @@
 
-body {
-}
-
-.txt {
-	height: 2000px;
-}
-
 // background-sizeは見切れないよう調整する
 .parallax01,.parallax02 {
 	height: 300px;
@@ -21,4 +14,14 @@ body {
 }
 .parallax02 {
 	background-image: url(../images/bg02.jpg);
+}
+
+/**
+ * レイアウトのためのスタイル
+ */
+.scroll {
+	margin: 500px 0;
+}
+.blank {
+	height: 500px;
 }
