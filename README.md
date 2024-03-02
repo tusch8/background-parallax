@@ -6,4 +6,4 @@ scrollイベントを使ったただのパララックス
 Intersection Observerを使って、パララックスする要素が画面内に入ったときに、scrollイベントを切り替えようとおもったが、できそうでできなかった
 
 ## デモ
-https://inaro8.github.io/background-parallax/
+https://tusch8.github.io/background-parallax/
